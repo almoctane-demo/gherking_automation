@@ -2,8 +2,6 @@
 @TID1061REV0.2.0
 Feature:Chrome Live Chat Test
 The user should be able to chat live in Google Chrome
-Background: 
-Given: user opens Google Chrome
 Scenario:
 Given the Google Chrome browser is open
 When opening the live chat
