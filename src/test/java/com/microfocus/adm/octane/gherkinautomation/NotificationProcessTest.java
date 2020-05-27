@@ -1,7 +1,8 @@
 package com.microfocus.adm.octane.gherkinautomation;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class NotificationProcessTest {
     @Given("^Data breach$")
@@ -18,5 +19,10 @@ public class NotificationProcessTest {
     @When("^Breach was detected$")
     public void breachWasDetected() {
         System.out.println("Breach Detected!");
+    }
+
+    @Then("Verify process for notification of data subjects")
+    public void verify_process_for_notification_of_data_subjects() {
+        System.out.println("Verified!");
     }
 }

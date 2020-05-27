@@ -1,11 +1,11 @@
 package com.microfocus.adm.octane.gherkinautomation;
 
-import com.hpe.alm.octane.OctaneCucumber;
-import cucumber.api.CucumberOptions;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-@RunWith(OctaneCucumber.class)
-@CucumberOptions(plugin={"junit:junitResult.xml"},
+@RunWith(Cucumber.class)
+@CucumberOptions(plugin="com.hpe.alm.octane.OctaneGherkinFormatter:gherkin-results/ManualRunnerTest_OctaneGherkinResults.xml",
         features="src/test/resources")
 public class ManualRunnerTest{
 

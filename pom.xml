@@ -8,11 +8,23 @@
     <artifactId>gherkin_automation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>com.hpe.alm.octane</groupId>
             <artifactId>octane-cucumber-jvm</artifactId>
-            <version>12.55.7</version>
+            <version>15.1.0</version>
         </dependency>
     </dependencies>
 </project>
